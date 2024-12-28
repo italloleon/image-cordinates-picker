@@ -1,0 +1,29 @@
+.picker {
+  position: relative;
+  background-size: cover;
+  cursor: pointer;
+  user-select: none;
+  background-position: center;
+  .cursor {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
+
+  .cursor::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    border: 2px solid white;
+  }
+}
